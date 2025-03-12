@@ -64,7 +64,7 @@ subroutine qinit(meqn,mbc,mx,my,xlow_patch,ylow_patch,dx,dy,q,maux,aux)
                         dq = dq / ((xipc-ximc)*(yjpc-yjmc))
                     endif
 
-                    if q(1,i,j)>0. then
+                    if ( q(1,i,j)>0. ) then
                         q(6,i,j) = q(6,i,j) + dq
                     else
                         q(6,i,j) = 0.d0
